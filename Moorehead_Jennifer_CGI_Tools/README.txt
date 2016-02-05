@@ -1,0 +1,1 @@
+To view the Script, open Script Display and load the Create Walls Script. Highlight the code and press enter and the cut outs should be created.
