@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <tool name="SideFX::toonsimple" orbolt="True" label="Toon Simple" icon="SideFX__toonsimple-icon.png">
+    <helpText><![CDATA[Install or download the Toon Simple Orbolt digital asset.]]></helpText>
+    <helpURL>http://www.orbolt.com/asset/SideFX::toonsimple</helpURL>
+    <script scriptType="python"><![CDATA[import shelfutils
+shelfutils.installOrboltAsset(kwargs, "SideFX::toonsimple", "http://www.orbolt.com/asset/SideFX::toonsimple")]]></script>
+  </tool>
+
+  <toolshelf name="my_shelf" label="My Shelf"/>
+
+  <shelfSetEdit name="shelf_set_1" fileLocation="/opt/hfs15.0.313/houdini/toolbar/ShelfDefinitions.shelf">
+    <moveMemberToolshelf name="animation" fromPosition="8" toPosition="0"/>
+    <addMemberToolshelf name="autorigs" inPosition="1"/>
+    <moveMemberToolshelf name="character" fromPosition="9" toPosition="2"/>
+    <addMemberToolshelf name="cloth_dynamics" inPosition="3"/>
+    <moveMemberToolshelf name="cloud" fromPosition="13" toPosition="4"/>
+    <addMemberToolshelf name="volume_tools_dynamics" inPosition="5"/>
+    <addMemberToolshelf name="crowds" inPosition="7"/>
+    <addMemberToolshelf name="drive_simulation" inPosition="8"/>
+    <addMemberToolshelf name="volume_creation_dynamics" inPosition="9"/>
+    <addMemberToolshelf name="grains" inPosition="10"/>
+    <moveMemberToolshelf name="hair" fromPosition="17" toPosition="11"/>
+    <addMemberToolshelf name="lights_and_cameras" inPosition="12"/>
+    <moveMemberToolshelf name="model" fromPosition="14" toPosition="13"/>
+    <addMemberToolshelf name="my_shelf" inPosition="0"/>
+    <addMemberToolshelf name="ocean" inPosition="16"/>
+    <addMemberToolshelf name="liquid_dynamics" inPosition="17"/>
+    <addMemberToolshelf name="particles" inPosition="18"/>
+    <addMemberToolshelf name="volume_sourcing_dynamics" inPosition="20"/>
+    <moveMemberToolshelf name="deform" fromPosition="21" toPosition="9"/>
+    <addMemberToolshelf name="pyro_dynamics" inPosition="22"/>
+    <moveMemberToolshelf name="rigging" fromPosition="24" toPosition="23"/>
+    <addMemberToolshelf name="rbd_dynamics" inPosition="24"/>
+    <addMemberToolshelf name="solid_dynamics" inPosition="25"/>
+    <addMemberToolshelf name="tdtools" inPosition="26"/>
+    <moveMemberToolshelf name="grooming" fromPosition="28" toPosition="13"/>
+    <addMemberToolshelf name="melting_dynamics" inPosition="29"/>
+    <addMemberToolshelf name="wire_dynamics" inPosition="31"/>
+  </shelfSetEdit>
+</shelfDocument>

@@ -1,0 +1,23 @@
+#! /bin/bash
+# mantra render script
+
+# define start number of ifd sequence
+i="1"
+
+# define end number of ifd sequence
+n="10"
+
+# define prepad-number name of ifd sequence to be rendered
+name="wobbly_"
+
+while [ $i -le $n ]
+do
+
+pad=`exec ~istephen/bin/padnumber $i 4`
+mantra $name$pad".ifd"
+
+i=$[$i+1]
+done
+
+
+
